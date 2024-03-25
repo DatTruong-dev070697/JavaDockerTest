@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-alpine
-WORKDIR /JavaDockerTest
+WORKDIR /JavaDockerTest/src/main/java/demo
 COPY . /JavaDockerTest/src/main/java/demo
-RUN javac /JavaDockerTest/src/main/java/demo/Main.java
+RUN javac Main.java
 CMD ["java", "Main"]
