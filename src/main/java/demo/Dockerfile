@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-alpine
-WORKDIR /JavaDockerTest/src/main/java/demo
-COPY . /JavaDockerTest/src/main/java/demo/
-RUN javac HelloWorld.java
-ENTRYPOINT ["java", "HelloWorld"]
+WORKDIR /app
+COPY /JavaDockerTest/src/main/java/demo/ /app
+RUN mkdir /app
+CMD ["java", "HelloWorld"]
