@@ -9,4 +9,4 @@ COPY . /app
 RUN javac HelloWorld.java
 
 # Mô tả lệnh chạy mặc định khi container được khởi chạy
-CMD ["java", "demo.HelloWorld"]
+CMD ["java", "-cp", "./JavaDockerTest/src/main/java", "demo.HelloWorld"]
