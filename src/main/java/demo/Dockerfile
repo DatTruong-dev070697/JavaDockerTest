@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-alpine
-WORKDIR /app
-COPY /JavaDockerTest/src/main/java/demo/ /app
 RUN mkdir /app
+COPY /JavaDockerTest/src/main/java/demo/ /app
+WORKDIR /app
 CMD ["java", "HelloWorld"]
