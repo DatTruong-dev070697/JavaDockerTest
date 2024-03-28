@@ -3,7 +3,8 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 # Sao chép mã nguồn của ứng dụng Java vào thư mục /app trong container
-COPY ./JavaDockerTest/src/main/java /app
+COPY ./JavaDockerTest/src/main/java/ /app
+
 
 # Build ứng dụng Java
 RUN javac HelloWorld.java
