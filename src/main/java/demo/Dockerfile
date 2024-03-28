@@ -6,7 +6,7 @@ WORKDIR /demo
 COPY . /demo
 
 # Build ứng dụng Java
-RUN javac demo/HelloWorld.java
+RUN javac HelloWorld.java
 
 # Mô tả lệnh chạy mặc định khi container được khởi chạy
-CMD ["java", "demo.HelloWorld"]
+CMD ["java", "-cp", "/demo", "demo.HelloWorld"]
