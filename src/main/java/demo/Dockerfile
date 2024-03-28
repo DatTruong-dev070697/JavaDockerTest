@@ -9,4 +9,4 @@ COPY . /demo
 RUN javac HelloWorld.java
 
 # Mô tả lệnh chạy mặc định khi container được khởi chạy
-CMD ["java", "-cp", "/demo", "demo.HelloWorld"]
+CMD ["java", "demo.HelloWorld"]
