@@ -1,12 +1,12 @@
 FROM openjdk:17-jdk-alpine
 # Thiết lập thư mục làm việc mặc định trong container
-WORKDIR /app
+WORKDIR /demo
 
 # Sao chép mã nguồn của ứng dụng Java vào thư mục /app trong container
-COPY . /app
+COPY . /demo
 
 # Build ứng dụng Java
 RUN javac HelloWorld.java
 
 # Mô tả lệnh chạy mặc định khi container được khởi chạy
-CMD ["java", "-cp", "/app", "demo.HelloWorld"]
+CMD ["java", "-cp", "/demo", "demo.HelloWorld"]
