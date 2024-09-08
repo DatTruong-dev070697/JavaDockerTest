@@ -1,2 +1,2 @@
 # JavaDockerTest
-aaa
+bbb
