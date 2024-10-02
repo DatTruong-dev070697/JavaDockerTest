@@ -1,2 +1,2 @@
 # JavaDockerTest
-build project in jenkins 3
+build project in jenkins 4
