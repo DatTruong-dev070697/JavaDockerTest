@@ -14,6 +14,7 @@ pipeline {
                 sh 'cd /root/jenkins/workspace/JavaProject_Webhook/src/main/java/demo'
                 sh 'docker build -t abc .'
                 sh 'docker run abc'
+				sh 'docker system prune -f'
             }
         }
     }
