@@ -1,2 +1,2 @@
 # JavaDockerTest
-build project in jenkins 7
+build project in jenkins 8
