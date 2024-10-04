@@ -1,2 +1,2 @@
 # JavaDockerTest
-build project in jenkins 6
+build project in jenkins 7
