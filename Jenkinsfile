@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+     agent { label 'Agent_Ubuntu' }
 
     stages {
         stage('Clone') {
