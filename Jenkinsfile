@@ -11,10 +11,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build project with docker'
-                sh 'cd /root/jenkins/workspace/JavaProject_Webhook/src/main/java/demo/'
-                sh 'docker build -t abc .'
-                sh 'docker run abc'
-				sh 'docker system prune -f'
+                dir('/root/jenkins/workspace/JavaProject_Webhook/src/main/java/demo/'){
+					sh 'docker build -t abc .'
+					sh 'docker run abc'
+				}
             }
         }
     }
