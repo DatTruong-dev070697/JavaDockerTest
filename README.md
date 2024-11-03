@@ -1,2 +1,2 @@
 # JavaDockerTest
-build project in jenkins 10
+build project in jenkins 11
