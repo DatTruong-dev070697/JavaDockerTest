@@ -1,2 +1,2 @@
 # JavaDockerTest
-build project in jenkins 14
+build project in jenkins 15
