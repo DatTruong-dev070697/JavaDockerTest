@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build project with docker'
-                dir('/root/jenkins/workspace/JavaProject_Webhook/src/main/java/demo/'){
+                dir('/root/jenkins/workspace/Webhook_Pipeline/src/main/java/demo/'){
 					sh 'docker build -t abc .'
 					sh 'docker run abc'
 				}
